@@ -1,0 +1,6 @@
+nav {
+  height: 85px;
+
+  grid-row: 1/2;
+  grid-column: 1/9;
+}

@@ -1,0 +1,37 @@
+html {
+  min-height: 100%; /* Look, it's not fixed anymore! */
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  font-family: "Onest", sans-serif;
+}
+
+body,
+#root {
+  display: inherit;
+  flex-direction: inherit;
+
+  flex-grow: 1;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.weather-app {
+  flex-grow: 1;
+
+  background-image: url(./assets/weather-app-placeholder-background.png);
+  background-size: cover;
+  background-position: center;
+}
+/* ^^ Makes sure that the root is always the size of the viewport ^^ */
+
+.weather-app {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}

@@ -1,0 +1,172 @@
+.main-current-weather-data-container {
+  display: grid;
+
+  grid-template-rows: 150px repeat(7, 1fr);
+
+  padding-left: 100px;
+}
+
+/* Primary Current Weather Data */
+
+.condition-container {
+  grid-row: 2/3;
+
+  display: flex;
+
+  justify-content: start;
+  align-items: end;
+
+  margin-bottom: 35px;
+}
+
+.temp-container {
+  grid-row: 3/4;
+}
+
+.location-container {
+  grid-row: 7/8;
+}
+
+.condition {
+  font-size: 4.3rem;
+}
+
+.location-name {
+  font-size: 2.5rem;
+}
+
+.location-region {
+  margin-top: 10px;
+  font-size: 1.7rem;
+}
+
+.location-country {
+  margin-top: 10px;
+
+  font-size: 0.9rem;
+}
+
+.date {
+  font-size: 1.2rem;
+}
+
+.date-time-container {
+  grid-row: 4/5;
+
+  display: flex;
+
+  align-items: start;
+}
+
+.temp-1-container,
+.temp-2-container {
+  display: flex;
+
+  justify-content: start;
+  align-items: center;
+
+  padding: 3px;
+}
+
+.temp-1 {
+  font-size: 3.3rem;
+}
+
+.temp-2 {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1250px) {
+  .condition {
+    font-size: 3rem;
+  }
+  .temp-1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* Secondary Current Weather Data */
+
+.secondary-current-weather-data-container {
+  margin-inline: 40px;
+  padding-bottom: 10px;
+
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.6);
+
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wind-speed-container,
+.humidity-container,
+.precip-level-container {
+  height: 100%;
+
+  display: inherit;
+
+  flex-direction: column;
+  align-items: center;
+
+  width: 125px;
+  padding-top: 10px;
+
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.wind-speed-container:hover,
+.humidity-container:hover,
+.precip-level-container:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.wind-speed-icon,
+.humidity-icon,
+.precip-level-icon {
+  opacity: 0.75;
+}
+
+.wind-speed-icon,
+.humidity-icon {
+  width: 45px;
+  height: auto;
+
+  aspect-ratio: 1/1;
+
+  margin-bottom: 25px;
+}
+
+.precip-level-icon {
+  width: 52px;
+  height: auto;
+
+  aspect-ratio: 1/1;
+  margin-bottom: 18px;
+}
+
+.precip-level-values-container,
+.wind-speed-values-container,
+.humidity {
+  display: flex;
+
+  flex-direction: column;
+
+  height: 20px;
+
+  padding-top: 9px;
+
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.wind-speed-2,
+.precip-level-2 {
+  margin-top: 5px;
+
+  font-size: 0.6rem;
+  font-weight: 400;
+}

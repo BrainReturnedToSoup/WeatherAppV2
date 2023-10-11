@@ -1,0 +1,16 @@
+.use-current-location-button {
+  height: 100%;
+  width: auto;
+
+  aspect-ratio: 1/1;
+
+  background-color: transparent;
+
+  background-image: url("../assets/pin.png");
+
+  background-position: center;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+
+  border-bottom-left-radius: 5px;
+}
